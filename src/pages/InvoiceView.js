@@ -180,6 +180,9 @@ const InvoiceView = () => {
         <button className="btn-secondary" onClick={() => navigate(`/invoice/${invoice.id}/edit`)}>
           Edit
         </button>
+        <button className="btn-accent" onClick={() => navigate(`/challan/${invoice.id}`)}>
+          Generate Delivery Challan
+        </button>
         <button className="btn-primary" onClick={handlePrint}>
           Print Invoice
         </button>

@@ -26,7 +26,8 @@
 .create-invoice-page,
 .edit-invoice-page,
 .all-orders-page,
-.settings-page {
+.settings-page,
+.delivery-challan-page {
   animation: fadeUp 0.3s ease;
 }
 
@@ -39,7 +40,8 @@
 .btn-primary,
 .btn-secondary,
 .btn-outline,
-.btn-success {
+.btn-success,
+.btn-accent {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +88,14 @@
 
 .btn-success:hover { background: #059669; transform: translateY(-1px); }
 .btn-success:disabled { background: var(--text-light); box-shadow: none; cursor: not-allowed; }
+
+.btn-accent {
+  background: #f59e0b;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.btn-accent:hover { background: #d97706; transform: translateY(-1px); }
 
 /* ===== FORM SECTIONS ===== */
 .form-section {
@@ -631,6 +641,65 @@
 .btn-delete { color: var(--danger); }
 .btn-delete:hover { background: var(--danger); border-color: var(--danger); color: #fff; }
 
+.btn-success-short {
+  width: auto;
+  padding: 0 12px;
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  gap: 6px;
+}
+
+.btn-success-short svg {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-success-short:hover {
+  background: #ecfdf5;
+  border-color: var(--success);
+  color: var(--success);
+}
+
+/* ===== DELIVERY CHALLAN LIST ===== */
+.challan-hint {
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-light);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.challan-hint strong {
+  color: var(--primary);
+}
+
+/* ===== DELIVERY CHALLAN PAGE ===== */
+.delivery-challan-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.challan-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: fit-content;
+  max-width: 100%;
+  box-shadow: var(--shadow-sm);
+}
+
 /* ===== EMPTY STATE ===== */
 .empty-state {
   text-align: center;
@@ -715,6 +784,7 @@
 @media print {
   .view-actions,
   .preview-actions,
+  .challan-actions,
   .action-buttons,
   .navbar,
   .page-header {

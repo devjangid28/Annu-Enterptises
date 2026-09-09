@@ -7,6 +7,8 @@ import AllOrders from './pages/AllOrders';
 import EditInvoice from './pages/EditInvoice';
 import InvoiceView from './pages/InvoiceView';
 import Settings from './components/Settings/Settings';
+import DeliveryChallan from './pages/DeliveryChallan';
+import DeliveryChallanList from './pages/DeliveryChallanList';
 import './App.css';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
             <Route path="/invoice/:id" element={<InvoiceView />} />
             <Route path="/invoice/:id/edit" element={<EditInvoice />} />
             <Route path="/invoice/:id/print" element={<InvoiceView />} />
+            <Route path="/challan" element={<DeliveryChallanList />} />
+            <Route path="/challan/:id" element={<DeliveryChallan />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </Layout>
