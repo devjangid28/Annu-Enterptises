@@ -1,0 +1,93 @@
+.settings-page {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.settings-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.note-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.note-num {
+  font-weight: 700;
+  min-width: 24px;
+  color: var(--text-muted);
+}
+
+.note-input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  background: var(--surface-2);
+  color: var(--text);
+  transition: all 0.18s;
+}
+
+.note-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+.btn-remove-note {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--danger);
+  transition: all 0.18s;
+}
+
+.btn-remove-note:hover {
+  background: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+}
+
+.btn-add-note {
+  background: none;
+  border: 1px dashed var(--border-strong);
+  padding: 9px 18px;
+  border-radius: 8px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 6px;
+  transition: all 0.2s;
+}
+
+.btn-add-note:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-soft);
+}

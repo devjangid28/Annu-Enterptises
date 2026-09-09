@@ -1,0 +1,81 @@
+.uploader {
+  margin-bottom: 12px;
+}
+
+.uploader-label {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: var(--text-muted);
+}
+
+.uploader-area {
+  border: 1.5px dashed var(--border-strong);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--surface-2);
+}
+
+.uploader-area:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.uploader-placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.uploader-placeholder.sig {
+  min-height: 60px;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.uploader-hint {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.uploader-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-preview-img {
+  max-width: 200px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.signature-preview-img {
+  max-width: 180px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.btn-remove {
+  background: var(--danger);
+  color: #fff;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-remove:hover {
+  background: #dc2626;
+}
